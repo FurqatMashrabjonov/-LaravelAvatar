@@ -1,0 +1,32 @@
+{
+    "name": "furqat/laravel-avatar",
+    "description": "This package used for generate svg avatar",
+    "type": "library",
+    "require": {
+        "php": ">=5.6"
+    },
+    "authors": [
+        {
+            "name": "Furqat Mashrabjonov",
+            "email": "mashrabjonovfurqat@gmail.com",
+            "homepage": "https://github.com/FurqatMashrabjonov"
+        }
+    ],
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Furqat\\LaravelAvatar\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "\\Furqat\\LaravelAvatar\\LaravelAvatarServiceProvider"
+            ],
+            "aliases": {
+                "Avatar": "Furqat\\LaravelAvatar\\LaravelAvatar"
+            }
+        }
+    }
+}
